@@ -16,7 +16,6 @@ push:
 # pull section allows you to provide instructions for cloning this project in remote locations
 pull:
 - prefect.deployments.steps.git_clone:
-  id: clone-step
   repository: https://github.com/zzstoatzz/windows.git
 
 - prefect.deployments.steps.run_shell_script:
