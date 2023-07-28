@@ -20,7 +20,7 @@ pull:
 
   - prefect.deployments.steps.run_shell_script:
       script: |
-
+        ls -la
         pip install -r foo/bar/requirements.txt
 
 # the deployments section allows you to provide configuration for deploying flows
