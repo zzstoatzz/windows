@@ -12,6 +12,9 @@ build:
 
 # push section allows you to manage if and how this project is uploaded to remote locations
 push:
+
+# pull section allows you to provide instructions for cloning this project in remote locations
+pull:
 - prefect.deployments.steps.git_clone:
   id: clone-step
   repository: https://github.com/zzstoatzz/windows.git
@@ -20,10 +23,6 @@ push:
     script: |
 
       pip install -r requirements.txt
-
-# pull section allows you to provide instructions for cloning this project in remote locations
-pull:
-
 
 # the deployments section allows you to provide configuration for deploying flows
 deployments:
