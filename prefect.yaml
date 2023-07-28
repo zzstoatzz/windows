@@ -14,9 +14,8 @@ build:
 push:
 - prefect.deployments.steps.git_clone:
   id: clone-step
-  repository: '{{ repository }}'
-  branch: '{{ branch }}'
-  access_token: null
+  repository: https://github.com/zzstoatzz/windows.git
+
 - prefect.deployments.steps.run_shell_script:
     script: |
 
