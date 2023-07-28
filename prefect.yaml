@@ -16,12 +16,12 @@ push:
 # pull section allows you to provide instructions for cloning this project in remote locations
 pull:
   - prefect.deployments.steps.git_clone:
-    repository: https://github.com/zzstoatzz/windows.git
+      repository: https://github.com/zzstoatzz/windows.git
 
   - prefect.deployments.steps.run_shell_script:
       script: |
 
-        pip install -r requirements.txt
+        pip install -r foo/bar/requirements.txt
 
 # the deployments section allows you to provide configuration for deploying flows
 deployments:
