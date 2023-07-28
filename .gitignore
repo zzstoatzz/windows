@@ -1,2 +1,5 @@
 .prefect/
 .prefect
+
+__pycache__/
+**/__pycache__

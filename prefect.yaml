@@ -18,10 +18,9 @@ pull:
   - prefect.deployments.steps.git_clone:
       repository: https://github.com/zzstoatzz/windows.git
 
-  - prefect.deployments.steps.run_shell_script:
-      script: |
-        ls -la
-        pip install -r windows/foo/bar/requirements.txt
+  - prefect.deployments.steps.pip_install_requirements:
+      directory: windows/foo/bar
+      requirements_file: requirements.txt
 
 # the deployments section allows you to provide configuration for deploying flows
 deployments:
